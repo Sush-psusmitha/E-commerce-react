@@ -1,0 +1,135 @@
+.hero {
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    gap: 50xp;
+    padding: 40px 180px;
+}
+
+/* LEFT */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+/* Hand icon */
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-hand-icon img {
+    width: 90px;
+}
+
+/* Button */
+.hero-latest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 300px;
+    height: 65px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: #ff4141;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* RIGHT */
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-right img {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 40px;
+    }
+
+    .hero-left p {
+        font-size: 52px;
+    }
+
+    .hero-hand-icon img {
+        width: 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-left p {
+        font-size: 42px;
+    }
+
+    .hero-hand-icon {
+        justify-content: center;
+    }
+
+    .hero-latest-btn {
+        width: 260px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .hero-right img {
+        width: 80%;
+        margin-top: 30px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero-left p {
+        font-size: 34px;
+    }
+
+    .hero-left h2 {
+        font-size: 20px;
+    }
+}
