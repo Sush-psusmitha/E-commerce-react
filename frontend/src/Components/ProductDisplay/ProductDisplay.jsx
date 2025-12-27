@@ -7,7 +7,7 @@ const ProductDisplay = (props) => {
   return (
     <div className='productdisplay'>
       <div className="productdisplay-Left">
-        <div class="productdisplay-img-left">
+        <div class="productdisplay-img-list">
             <img src={product.image} alt=""/>
             <img src={product.image} alt=""/>
             <img src={product.image} alt=""/>
@@ -19,7 +19,7 @@ const ProductDisplay = (props) => {
       </div>
       <div className="productdisplay-Right">
            <h1>{product.name}</h1>
-           <div class="productdisplay-right-star">
+           <div className="productdisplay-right-stars">
             <img src={star_icon} alt=""/>
             <img src={star_icon} alt=""/>
             <img src={star_icon} alt=""/>
@@ -27,18 +27,18 @@ const ProductDisplay = (props) => {
             <img src={star_dull} alt=""/>
             <p>(122)</p>
            </div>
-           <div class="productdisplay-right-prices">
-            <div class="productdisplay-right-price-old">${product.old_price}
+           <div className="productdisplay-right-prices">
+            <div className="productdisplay-right-price-old">${product.old_price}
             </div>
-            <div class="productdisplay-right-price-new">${product.new_price}
+            <div className="productdisplay-right-price-new">${product.new_price}
             </div>
            </div>
-           <div class="productdisplay-right-description">
+           <div className="productdisplay-right-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni harum fugit nobis impedit laboriosam est cupiditate quia atque mollitia.
            </div>
-           <div className='productdisplay-right-size'> 
+           <div className='productdisplay-right-sizes'> 
              <h1>Select Size</h1>
-             <div class="productdisplay-right-size">
+             <div className="productdisplay-right-size">
                 <div>S</div>
                 <div>M</div>
                 <div>L</div>
@@ -53,7 +53,7 @@ const ProductDisplay = (props) => {
            </p>
            <p className='productdisplay-right-category
            '>
-            <span>Tags: </span> Modern, Latest, 
+            <span>Tags: </span> Modern, Latest, trending
            </p>
       </div>
     </div>
