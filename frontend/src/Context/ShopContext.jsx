@@ -1,6 +1,5 @@
 import React, { createContext, useState } from "react";
 import all_product from "../Components/Assets/all_product";
-import { useSearchParams } from "react-router-dom";
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
